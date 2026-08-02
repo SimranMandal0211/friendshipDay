@@ -1,0 +1,32 @@
+.yespage-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+.yespage-image {
+  max-width: 250px;
+  width: 60%;
+  height: auto;
+  border-radius: 20px;
+}
+
+.yespage-text {
+  font-size: 1.5rem;
+  color: #222;
+  margin: 20px 0;
+}
+
+.btn-next {
+  padding: 10px 30px;
+  font-size: 1.1rem;
+  border: 2px solid #c0392b;
+  border-radius: 25px;
+  background: #c0392b;
+  color: white;
+  cursor: pointer;
+}

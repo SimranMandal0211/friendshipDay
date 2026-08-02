@@ -1,0 +1,125 @@
+.letterpage-background{
+  min-height: 100vh;
+  width: 100%;
+  background-image: url('/images/paper-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 768px) {
+  .letterpage-background {
+    background-image: url('/images/mobile-page.jpg');
+  }
+}
+
+
+.letterpage-content {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+
+.letterpage-lines {
+  max-width: 500px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.letterpage-line {
+  font-size: 1.1rem;
+  color: #333;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.letterpage-highlight {
+  background: #ffe680;
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-weight: 600;
+  color: #7a4b00;
+}
+
+.letterpage-sticky {
+  position: relative;
+  background: #fffbe6;
+  border: 1px solid #e0d8a0;
+  padding: 16px 14px;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  margin: 10px 0;
+}
+
+.letterpage-tape {
+  position: absolute;
+  top: -10px;
+  left: 15px;
+  width: 50px;
+  height: 20px;
+  background: rgba(200, 200, 200, 0.6);
+  transform: rotate(-8deg);
+  border-radius: 2px;
+}
+
+.letterpage-cry-btn {
+  margin-top: 30px;
+  padding: 10px 26px;
+  font-size: 1rem;
+  border: 2px solid #c0392b;
+  border-radius: 25px;
+  background: white;
+  color: #c0392b;
+  cursor: pointer;
+}
+
+.letterpage-popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.letterpage-popup-box {
+  background: white;
+  padding: 25px 20px;
+  border-radius: 10px;
+  max-width: 320px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.letterpage-popup-title {
+  font-size: 1.3rem;
+  color: #c0392b;
+  margin: 0 0 10px;
+}
+
+.letterpage-popup-text {
+  font-size: 0.95rem;
+  color: #444;
+  margin: 0 0 20px;
+}
+
+.letterpage-popup-btn {
+  padding: 8px 20px;
+  font-size: 0.95rem;
+  border: none;
+  border-radius: 20px;
+  background: #c0392b;
+  color: white;
+  cursor: pointer;
+}

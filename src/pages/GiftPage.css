@@ -1,0 +1,35 @@
+.giftpage-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+.giftpage-title {
+  font-size: 1.8rem;
+  color: #c0392b;
+  margin-bottom: 20px;
+}
+
+.giftpage-clickme-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.giftpage-image {
+  max-width: 200px;
+  width: 100%;
+  height: auto;
+}
+
+.giftpage-openme {
+  font-size: 1.2rem;
+  color: #c0392b;
+  text-decoration: underline;
+  margin-top: 10px;
+}

@@ -1,0 +1,44 @@
+.wishpage-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+.wishpage-image {
+  max-width: 200px;
+  width: 50%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.wishpage-title {
+  font-size: 2rem;
+  color: #c0392b;
+  margin: 15px 0 5px;
+}
+
+.wishpage-notification {
+  font-size: 1.2rem;
+  color: #222;
+  margin: 5px 0;
+}
+
+.wishpage-text {
+  font-size: 1rem;
+  color: #444;
+  margin: 5px 0 20px;
+}
+
+.wishpage-clickme {
+  font-size: 1.1rem;
+  color: #c0392b;
+  text-decoration: underline;
+  cursor: pointer;
+  margin: 0;
+}
