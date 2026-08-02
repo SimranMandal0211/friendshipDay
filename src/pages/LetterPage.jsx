@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
-import "./LetterPage.css";
+import './letter.css';
 
 const lines = [
   { type: "normal", text: "Dear Friend! " },
