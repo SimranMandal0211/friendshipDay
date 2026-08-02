@@ -57,7 +57,7 @@ function MemoriesPage() {
 
         <div className="memoriespage-clickme-box" onClick={() => navigate("/letter")}>
           <img src="/images/gift2.png" alt="Gift" className="memoriespage-gift-icon" />
-          <p className="memoriespage-clickme">tap to claim more gifts</p>
+          <p className="memoriespage-clickme">Tap to claim more gifts</p>
         </div>
       </div>
     </PageBackground>

@@ -24,7 +24,7 @@ function WishPage() {
           className="wishpage-image"
         />
         <h1 className="wishpage-title">Happy Friendship Day 💛</h1>
-        <p className="wishpage-notification">You are my fav notification 🤗</p>
+        <p className="wishpage-notification">You are my favorite notification 🤗</p>
         <p className="wishpage-text">Stay cute, stay happy and stay healthy.</p>
         <p className="wishpage-clickme" onClick={() => navigate("/gift")}>
           Click me

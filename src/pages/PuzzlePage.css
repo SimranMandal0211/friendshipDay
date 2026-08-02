@@ -1,0 +1,134 @@
+.puzzlepage-content {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 30px 15px;
+  box-sizing: border-box;
+}
+
+.puzzlepage-grid-wrapper {
+  position: relative;
+  background: white;
+  border: 3px solid #333;
+  border-radius: 16px;
+  padding: 15px;
+}
+
+.puzzlepage-grid {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 3px;
+}
+
+.puzzlepage-cell {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #333;
+  border-radius: 50%;
+  transition: background 0.5s ease, color 0.5s ease, transform 0.5s ease;
+}
+
+.highlight-purple {
+  background: #9b59b6;
+  color: white;
+  transform: scale(1.1);
+}
+.highlight-blue {
+  background: #3b6bd6;
+  color: white;
+  transform: scale(1.1);
+}
+.highlight-green {
+  background: #3aa76d;
+  color: white;
+  transform: scale(1.1);
+}
+.highlight-orange {
+  background: #e08a2b;
+  color: white;
+  transform: scale(1.1);
+}
+.highlight-red {
+  background: #d64545;
+  color: white;
+  transform: scale(1.1);
+}
+
+.puzzlepage-subtitle {
+  font-size: 1.1rem;
+  color: #333;
+  margin: 20px 0 15px;
+}
+
+.puzzlepage-reveal-btn {
+  padding: 10px 24px;
+  font-size: 1rem;
+  border: 2px solid #c0392b;
+  border-radius: 25px;
+  background: white;
+  color: #c0392b;
+  cursor: pointer;
+}
+
+.puzzlepage-message-box {
+  margin-top: 20px;
+  background: white;
+  padding: 16px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  max-width: 320px;
+}
+
+.puzzlepage-message-text {
+  font-size: 1.1rem;
+  color: #7a4b00;
+  margin: 0 0 12px;
+}
+
+.puzzlepage-continue-btn {
+  padding: 8px 20px;
+  font-size: 0.95rem;
+  border: none;
+  border-radius: 20px;
+  background: #c0392b;
+  color: white;
+  cursor: pointer;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.fade-in-up-delayed {
+  opacity: 0;
+  animation: fadeInUp 0.6s ease forwards;
+  animation-delay: 0.4s;
+}
+
+@media (max-width: 480px) {
+  .puzzlepage-cell {
+    width: 24px;
+    height: 24px;
+    font-size: 0.75rem;
+  }
+}

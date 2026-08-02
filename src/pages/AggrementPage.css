@@ -1,0 +1,178 @@
+.agreementpage-content {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 20px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.agreementpage-title {
+  font-size: 1.8rem;
+  color: #c0392b;
+  margin: 0 0 8px;
+}
+
+.agreementpage-subline {
+  font-size: 0.9rem;
+  color: #555;
+  margin: 0 0 15px;
+}
+
+.agreementpage-bold-line {
+  font-weight: 700;
+  font-size: 1rem;
+  color: #222;
+  margin: 0 0 15px;
+}
+
+.agreementpage-checkboxes {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 420px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.agreementpage-checkbox-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid #e0c9c9;
+  border-radius: 10px;
+  padding: 12px 14px;
+  text-align: left;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.15s ease;
+}
+
+.agreementpage-checkbox-item:hover {
+  background: rgba(255, 255, 255, 0.95);
+  transform: translateY(-1px);
+}
+
+.agreementpage-checkbox-item span {
+  font-size: 0.95rem;
+  color: #333;
+  line-height: 1.4;
+}
+
+.agreementpage-checkbox-item input[type="checkbox"] {
+  appearance: none;
+  min-width: 20px;
+  height: 20px;
+  border: 2px solid #c0392b;
+  border-radius: 5px;
+  margin-top: 2px;
+  cursor: pointer;
+  position: relative;
+  transition: background 0.2s ease;
+}
+
+.agreementpage-checkbox-item input[type="checkbox"]:checked {
+  background: #c0392b;
+}
+
+.agreementpage-checkbox-item input[type="checkbox"]:checked::after {
+  content: "✓";
+  position: absolute;
+  top: -3px;
+  left: 3px;
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.agreementpage-dashed-line {
+  width: 80%;
+  max-width: 400px;
+  border-top: 2px dashed #999;
+  margin: 15px 0;
+}
+
+.agreementpage-term {
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: #222;
+  margin: 4px 0;
+}
+
+.agreementpage-accept-btn {
+  margin-top: 20px;
+  padding: 10px 28px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 25px;
+  background: #c0392b;
+  color: white;
+  cursor: pointer;
+}
+
+.agreementpage-stamp-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 20;
+}
+
+.agreementpage-warning-box {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 24px;
+  border-radius: 10px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.agreementpage-warning-icon {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.agreementpage-warning-text {
+  color: #c0392b;
+  font-weight: 700;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.agreementpage-stamp-box {
+  border: 4px double #d64545;
+  color: #d64545;
+  font-size: 1.6rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  padding: 20px 30px;
+  transform: rotate(-12deg);
+  background: rgba(255, 255, 255, 0.9);
+  text-align: center;
+  border-radius: 6px;
+  animation: stampPop 0.4s ease;
+}
+
+@keyframes stampPop {
+  from {
+    transform: rotate(-12deg) scale(1.6);
+    opacity: 0;
+  }
+  to {
+    transform: rotate(-12deg) scale(1);
+    opacity: 1;
+  }
+}

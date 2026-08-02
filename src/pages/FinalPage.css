@@ -1,0 +1,67 @@
+.finalpage-content {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+
+.finalpage-title {
+  font-size: 2.2rem;
+  color: #c0392b;
+  margin: 0 0 8px;
+}
+
+.finalpage-subtitle {
+  font-size: 1.4rem;
+  color: #333;
+  margin: 0 0 15px;
+}
+
+.finalpage-text {
+  font-size: 1rem;
+  color: #555;
+  margin: 0 0 30px;
+}
+
+.finalpage-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+.finalpage-btn {
+  padding: 10px 26px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 25px;
+  background: #c0392b;
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.finalpage-btn-fade {
+  opacity: 0;
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.finalpage-btn-delayed {
+  animation-delay: 0.4s;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

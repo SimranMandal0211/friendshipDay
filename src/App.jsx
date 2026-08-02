@@ -6,6 +6,9 @@ import WishPage from "./pages/WishPage";
 import GiftPage from "./pages/GiftPage";
 import MemoriesPage from "./pages/MemoriesPage";
 import LetterPage from "./pages/LetterPage";
+import PuzzlePage from "./pages/PuzzlePage";
+import AgreementPage from "./pages/AggrementPage";
+import FinalPage from "./pages/FinalPage";
 
 function App() {
   return (
@@ -18,7 +21,9 @@ function App() {
         <Route path="/gift" element={<GiftPage />} />
         <Route path="/memories" element={<MemoriesPage />} />
         <Route path="/letter" element={<LetterPage />} />
-        {/* more routes will be added as we build the remaining pages */}
+        <Route path="/puzzle" element={<PuzzlePage />} />
+        <Route path="/agreement" element={<AgreementPage />} />
+        <Route path="/final" element={<FinalPage />} />
       </Routes>
     </BrowserRouter>
   );
