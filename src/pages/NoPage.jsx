@@ -10,10 +10,10 @@ function NoPage() {
       <div className="nopage-content">
         <img
           src="/images/no.jpg"
-          alt="How dare you"
+          alt="How dare you ??"
           className="nopage-image"
         />
-        <h2 className="nopage-text">How dare you</h2>
+        <h2 className="nopage-text">How dare you??</h2>
         <button className="btn-goback" onClick={() => navigate("/")}>
           Go back
         </button>

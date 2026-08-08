@@ -32,3 +32,8 @@
   color: #c0392b;
   cursor: pointer;
 }
+
+.btn-goback:hover{
+  background: #c0392b;
+  color: white;
+}
